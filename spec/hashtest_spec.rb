@@ -19,4 +19,12 @@ describe(Hashtester) do
     end
   end
 
+  describe('#has_key?') do
+    it('return false if the key is not present in the hash') do
+      demo_hash = Hashtester.new()
+      demo_hash.store("test", "output")
+      expect(demo_hash.has_key?("test false")).to(eq(false))
+    end
+  end
+
 end

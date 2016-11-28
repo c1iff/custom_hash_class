@@ -13,4 +13,8 @@ class Hashtester
     index = @key.index(input)
     @value[index]
   end
+
+  define_method(:has_key?) do |input|
+    @key.include?(input)
+  end
 end
